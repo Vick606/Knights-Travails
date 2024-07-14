@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const end = document.getElementById('end').value.split(',').map(Number);
         const path = board.knightMoves(start, end);
         highlightPath(path);
-        document.getElementById('output').textContent = `Path: ${JSON.stringify(path)}`;
+        
+        const output = document.getElementById('output');
+        output.innerHTML = `You made it in ${path.length - 1} moves! Here's your path:<br>`;
+        path.forEach(position => {
+            output.innerHTML += `[${position[0]},${position[1]}]<br>`;
+        });
     });
 });

@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         highlightPath(path);
         
         const output = document.getElementById('output');
-        output.innerHTML = `You made it in ${path.length - 1} moves! Here's your path:<br>`;
+        output.innerHTML = `<i class="fas fa-check-circle"></i> You made it in ${path.length - 1} moves! Here's your path:<br>`;
         path.forEach(position => {
-            output.innerHTML += `[${position[0]},${position[1]}]<br>`;
+            output.innerHTML += `<i class="fas fa-chevron-right"></i> [${position[0]},${position[1]}]<br>`;
         });
     });
 });

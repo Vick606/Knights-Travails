@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knight Moves Visualizer</title>
+    <title>Knight's Tour Visualizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="app">
-        <h1>Knight Moves Visualizer</h1>
-        <div id="chessboard"></div>
-        <div id="controls">
-            <input type="text" id="start" placeholder="Start position (e.g. 0,0)">
-            <input type="text" id="end" placeholder="End position (e.g. 7,7)">
-            <button id="visualize">Visualize</button>
-        </div>
-        <div id="output"></div>
+        <header>
+            <h1><i class="fas fa-chess-knight"></i> Knight's Tour Visualizer</h1>
+        </header>
+        <main>
+            <div id="chessboard"></div>
+            <div id="controls">
+                <div class="input-group">
+                    <label for="start"><i class="fas fa-play"></i> Start:</label>
+                    <input type="text" id="start" placeholder="e.g. 0,0">
+                </div>
+                <div class="input-group">
+                    <label for="end"><i class="fas fa-flag-checkered"></i> End:</label>
+                    <input type="text" id="end" placeholder="e.g. 7,7">
+                </div>
+                <button id="visualize"><i class="fas fa-eye"></i> Visualize</button>
+            </div>
+            <div id="output"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Made with <i class="fas fa-heart"></i> by Victor Koech</p>
+        </footer>
     </div>
 </body>
 </html>

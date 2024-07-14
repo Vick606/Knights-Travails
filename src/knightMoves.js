@@ -1,4 +1,5 @@
-class ChessBoard {
+
+export class ChessBoard {
     constructor() {
       this.board = new Map();
       this.initializeBoard();
@@ -34,7 +35,6 @@ class ChessBoard {
         const squareKey = square.toString();
   
         if (squareKey === endKey) {
-          this.printPath(path);
           return path;
         }
   
@@ -51,15 +51,4 @@ class ChessBoard {
   
       return null; // No path found
     }
-  
-    printPath(path) {
-      console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
-      path.forEach(position => {
-        console.log(`  [${position[0]},${position[1]}]`);
-      });
-    }
   }
-  
-  // Usage
-  const board = new ChessBoard();
-  board.knightMoves([3,3], [4,3]);

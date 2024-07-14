@@ -4,18 +4,12 @@
 
 Welcome to the Knight's Tour Visualizer! This project, part of The Odin Project curriculum, brings the classic chess puzzle to life. Watch as a knight traverses the chessboard, finding the shortest path between any two squares.
 
-![Knight's Tour Visualizer Screenshot](screenshot.png)
-
 ## Features
 
 - Interactive 8x8 chessboard
 - Visualize the shortest path a knight can take between any two squares
 - Animated path display
 - Responsive design for various screen sizes
-
-## Live Demo
-
-[Check out the live demo here!](https://your-username.github.io/knights-tour-visualizer)
 
 ## Technologies Used
 
@@ -81,8 +75,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Contact
 vickoch20@gmail.com
-
-Project Link: [https://github.com/your-username/knights-tour-visualizer](https://github.com/your-username/knights-tour-visualizer)
 
 ---
 

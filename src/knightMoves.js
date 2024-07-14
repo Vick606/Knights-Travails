@@ -34,6 +34,7 @@ class ChessBoard {
         const squareKey = square.toString();
   
         if (squareKey === endKey) {
+          this.printPath(path);
           return path;
         }
   
@@ -50,11 +51,15 @@ class ChessBoard {
   
       return null; // No path found
     }
+  
+    printPath(path) {
+      console.log(`You made it in ${path.length - 1} moves! Here's your path:`);
+      path.forEach(position => {
+        console.log(`  [${position[0]},${position[1]}]`);
+      });
+    }
   }
   
   // Usage
   const board = new ChessBoard();
-  console.log(board.knightMoves([0,0], [1,2]));
-  console.log(board.knightMoves([0,0], [3,3]));
-  console.log(board.knightMoves([3,3], [0,0]));
-  console.log(board.knightMoves([0,0], [7,7]));
+  board.knightMoves([3,3], [4,3]);

@@ -26,7 +26,6 @@ export class ChessBoard {
     knightMoves(start, end) {
       const queue = [[start]];
       const visited = new Set();
-      const startKey = start.toString();
       const endKey = end.toString();
   
       while (queue.length > 0) {

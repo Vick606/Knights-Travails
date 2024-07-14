@@ -21,8 +21,10 @@ export function highlightPath(path) {
     path.forEach((position, index) => {
         const [x, y] = position;
         const square = document.querySelector(`[data-x="${x}"][data-y="${y}"]`);
-        square.textContent = index;
-        square.classList.add('highlight');
+        setTimeout(() => {
+            square.textContent = index;
+            square.classList.add('highlight');
+        }, index * 500); // Delay each highlight for a nice animation effect
     });
 }
 
